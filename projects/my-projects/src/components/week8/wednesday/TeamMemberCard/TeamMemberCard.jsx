@@ -16,6 +16,7 @@ function TeamMemberInfo({ name, role, email }) {
 
 function TeamMemberCard({ image, name, role, email }) {
   return (
+    
     <div className="team-member-card">
       <Avatar image={image} name={name} />
       <TeamMemberInfo name={name} role={role} email={email} />
@@ -31,7 +32,9 @@ const members = [
 ];
 
   return (
-    <section>
+   
+    
+   <section>
       {members.map((members) => (
         <TeamMemberCard
           key={members.id}
