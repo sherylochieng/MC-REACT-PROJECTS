@@ -12,3 +12,137 @@
     background-color: aqua;
     color: #000;
 }
+/* NAVBAR */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* LOGO */
+.logo img {
+  height: 55px;
+  width: 55px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* NAV BUTTONS */
+.nav-buttons {
+  display: flex;
+  gap: 35px;
+}
+
+.nav-buttons a {
+  text-decoration: none;
+  color: #222;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+/* Underline animation on hover */
+.nav-buttons a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #b5860d;
+  transition: width 0.3s ease;
+}
+
+.nav-buttons a:hover::after {
+  width: 100%;
+}
+
+.nav-buttons a:hover {
+  color: #b5860d;
+}
+
+
+/* 
+product card */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 40px;
+}
+
+
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+.product-card h3 {
+  font-size: 16px;
+  margin: 10px 0 5px;
+  color: #222;
+}
+
+
+.price {
+  font-size: 15px;
+  font-weight: bold;
+  color: #b5860d;
+  margin: 5px 0;
+}
+
+
+.in-stock {
+  color: green;
+  font-size: 13px;
+}
+
+.out-of-stock {
+  color: red;
+  font-size: 13px;
+}
+
+.badge {
+  background-color: #b5860d;
+  color: white;
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #ffffff;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  padding: 20px 40px;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #222;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
