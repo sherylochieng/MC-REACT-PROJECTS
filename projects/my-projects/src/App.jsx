@@ -9,12 +9,23 @@ import Timer from './components/week8/Friday/timer'
 import Registration from './components/week9/Monday-forms/Registration'
 import ProductGrid from './components/week9/wednesday-filter/ProductLIst-search/Product'
 import SignPrevious from './components/week9/Thursday -controlled inputs/Form'
+import ProductList from './components/REVISION/PRODUCTLIST-SEARCH/Product-page/ProductList'
+
+
+
+
 function App() {
   return(
     <div>
      
 {/*         
           <Timer/> */}
+
+            <h1>PRODUCTLIST-SEARCH PROJECT WEEK 7</h1>
+          <ProductList/>
+
+
+
 
           <h1>REGISTRATION FORM PROJECT,MARCH 9TH 2026</h1>
           <Registration/>
